@@ -9,3 +9,6 @@ Meteor.startup ->
     @route "index",
       path: "/"
       template: "index"
+
+      waitOn: ->
+        Meteor.subscribe "queryMedia"
