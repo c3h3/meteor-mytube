@@ -1,8 +1,8 @@
 if (Meteor.isClient){
   
-  Template.main.var123 = "1234"
+  Template.HiMeteor.var123 = "1234"
 
-  Template.main.helpers({
+  Template.HiMeteor.helpers({
     helloString: "1234helloString",
     helloDate: new Date,
     helloNumeric: 123456.123,
