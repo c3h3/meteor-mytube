@@ -27,4 +27,8 @@ template(name="navBar")
 template(name="index")
   .container
     .row.clearfix
+      iframe#ytplayer(type="text/html",width="600",height="400",src="http://www.youtube.com/embed/escsixrqG6M",frameborder="0",allowfullscreen, style="margin-bottom: -4px")
       +reactiveTable settings
+
+template(name="indexPagePlayBtn")
+  a.indexPagePlayBtn.btn.btn-default(href="#",youtubeVideoId="{{youtubeVideoId}}") Play
