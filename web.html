@@ -7,5 +7,42 @@
 </body>
 
 <template name="main">
+  <hr>
+  <h2>{{var123}}</h2>
+  
+
+  <hr>
   <h2>{{helloString}}</h2>
+  
+  <hr>
+  <h2>{{helloDate}}</h2>
+  
+  <hr>
+  <h2>{{helloNumeric}}</h2>
+  
+
+  <hr>
+  <h2>{{helloArray}}</h2>
+  
+  {{#each helloArray}}
+    <h2>~~~~~~~~~~~~~~</h2>
+    <h2>{{this}}</h2>
+
+    {{#if this.a}}
+      <h2>{{this.a}}</h2>
+    {{/if}}  
+  {{/each}}
+
+  <hr>
+  <h2>{{helloObject.a}}</h2>
+  <h2>{{helloObject.b}}</h2>
+  <hr>
+  <h2>{{helloFn "1234"}}</h2>
+  <h2>{{helloFn 1234}}</h2>
+  <h2>{{helloFn helloString}}</h2>
+  <h2>{{helloFn helloDate}}</h2>
+  <h2>{{helloFn helloNumeric}}</h2>
+
+  <hr>
+
 </template>
