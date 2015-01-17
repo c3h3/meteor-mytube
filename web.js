@@ -11,8 +11,17 @@ if (Meteor.isClient){
     
     helloFn: function(xx){
       return xx+12345
-    }x
+    }
 
+  });
+
+  Template.HiMeteor.events({
+    "click #btn": function(e,t){
+      console.log("click #btn");
+    },
+    "click .c1": function(e,t){
+      console.log("click .c1");
+    }
   });
 
   console.log("Hello!");
